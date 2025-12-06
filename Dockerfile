@@ -1,5 +1,5 @@
 # Etapa 1: Construcción (Genera los archivos estáticos de React/Vite)
-FROM node:18-alpine as build
+FROM node:20-alpine as build
 WORKDIR /app
 # Copiamos solo los archivos de dependencias para aprovechar el caché de Docker
 COPY package*.json ./
